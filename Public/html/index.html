@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Vhallery 🌻</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/Public/css/sunflower.css"/>
+</head>
+<body>
+
+<!-- AUTH 1: Name + Favorite Color -->
+<div id="auth1" class="auth-panel active">
+  <div class="lock-icon">🔐</div>
+  <div class="auth-title">This gift is locked.</div>
+  <div class="auth-sub">Only the right person can open it.<br>Prove it's really you. 💜</div>
+  <div class="auth-field">
+    <label class="auth-label" for="name-input">Your name</label>
+    <input class="auth-input" id="name-input" type="text" placeholder="Type your name..." autocomplete="off" spellcheck="false"/>
+  </div>
+  <div class="auth-field">
+    <label class="auth-label">Your favorite color</label>
+    <div class="color-grid">
+      <div class="color-opt" data-color="purple" style="background:linear-gradient(135deg,#7c3aed,#a855f7)"><span class="ck">✓</span></div>
+      <div class="color-opt" data-color="red"    style="background:linear-gradient(135deg,#dc2626,#f87171)"><span class="ck">✓</span></div>
+      <div class="color-opt" data-color="blue"   style="background:linear-gradient(135deg,#1d4ed8,#60a5fa)"><span class="ck">✓</span></div>
+      <div class="color-opt" data-color="green"  style="background:linear-gradient(135deg,#15803d,#4ade80)"><span class="ck">✓</span></div>
+      <div class="color-opt" data-color="pink"   style="background:linear-gradient(135deg,#db2777,#f9a8d4)"><span class="ck">✓</span></div>
+      <div class="color-opt" data-color="yellow" style="background:linear-gradient(135deg,#ca8a04,#fde047)"><span class="ck">✓</span></div>
+    </div>
+  </div>
+  <div id="err1" class="auth-error"></div>
+  <button class="auth-btn" id="btn1">Next →</button>
+</div>
+
+<!-- AUTH 2: What do you call me -->
+<div id="auth2" class="auth-panel">
+  <div class="lock-icon">🤔</div>
+  <div class="auth-title">Almost there...</div>
+  <div class="auth-sub">One more thing to prove it's you. 💜</div>
+  <div class="auth-field">
+    <label class="auth-label">What do you call me? 🥰</label>
+    <input class="auth-input" id="nickname-input" type="text" placeholder="Type your answer..." autocomplete="off" spellcheck="false"/>
+  </div>
+  <div id="err2" class="auth-error"></div>
+  <button class="auth-btn" id="btn2">Continue →</button>
+</div>
+
+<!-- AUTH 3: Dream Profession -->
+<div id="auth3" class="auth-panel">
+  <div class="lock-icon">🌟</div>
+  <div class="auth-title">One last question...</div>
+  <div class="auth-sub">What's your dream profession? 👩‍💼</div>
+  <div class="auth-field">
+    <div class="choice-grid" id="prof-choices">
+      <div class="choice-opt" data-val="doctor">👩‍⚕️ Doctor</div>
+      <div class="choice-opt" data-val="engineer">👩‍💻 Engineer</div>
+      <div class="choice-opt" data-val="cpa lawyer">⚖️ CPA Lawyer</div>
+      <div class="choice-opt" data-val="teacher">👩‍🏫 Teacher</div>
+      <div class="choice-opt" data-val="nurse">💉 Nurse</div>
+      <div class="choice-opt" data-val="architect">🏛️ Architect</div>
+    </div>
+  </div>
+  <div id="err3" class="auth-error"></div>
+  <button class="auth-btn" id="btn3">Open My Gift 🌻</button>
+</div>
+
+<!-- INTRO SLIDES -->
+<div id="intro">
+  <div class="slide active">
+    <div class="s-emoji">🌱</div>
+    <div class="s-title">Hey, <em>Vhall.</em></div>
+    <div class="s-sub">I made something small for you.<br>Something that grows — just like you do.</div>
+  </div>
+  <div class="slide">
+    <div class="s-emoji">☀️</div>
+    <div class="s-title">You're the type of person<br>who <em>always faces the sun.</em></div>
+    <div class="s-sub">Tough when it's hard. Soft when it matters.<br>Always, always bright.</div>
+  </div>
+  <div class="slide">
+    <div class="s-emoji">💛</div>
+    <div class="s-title">You're the toughest. The prettiest.<br><em>The most lovable.</em></div>
+    <div class="s-sub">The hottest, sexiest, kindest, faithful<br>and the most independent girl in the world.</div>
+  </div>
+  <div class="slide">
+    <div class="s-emoji">🌻</div>
+    <div class="s-title">So I grew you<br><em>a garden.</em></div>
+    <div class="s-sub">Every sunflower in it is for you,<br>Vhall.</div>
+  </div>
+  <div id="slide-dots">
+    <div class="dot on"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <button id="next-btn">Next →</button>
+</div>
+
+<!-- GARDEN -->
+<div id="garden">
+  <div id="sky">
+    <div id="sun"></div>
+    <div id="moon"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+  <div id="ground"></div>
+  <div id="grass-row"></div>
+  <div id="flowers"></div>
+  <div id="night-label">🌙 Goodnight, Vhallery.<br><span style="font-size:.65em;color:#a78bfa">The sunflowers are sleeping...<br>They'll bloom again at sunrise. 🌅</span></div>
+  <div id="message-card">
+    <div class="name">Vhallery Camat 🌻</div>
+    <div class="msg">A virtual sunflower for the most beautiful girl in the world.</div>
+  </div>
+  <div id="counter">🌻 <span id="count">0</span> grown</div>
+  <div id="time-badge">☀️ --:--</div>
+  <div id="reset-btn">↻ Reset garden</div>
+  <div id="hint">Tap anywhere to grow a sunflower</div>
+</div>
+
+<script src="/Public//js/sunflower.js"></script>
+</body>
+</html>
